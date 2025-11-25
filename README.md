@@ -4,11 +4,11 @@ A Chrome extension that automatically replaces typed patterns with predefined te
 
 ## Features
 
-- 🎯 **Exact Pattern Matching**: Replace specific text patterns with longer text
-- ⏱️ **Configurable Delay**: Set a delay (default 300ms) before replacement to avoid premature triggers
-- 💾 **Persistent Storage**: Shortcuts sync across devices via Chrome sync
-- 📥 **Export/Import**: Backup and restore shortcuts as JSON files
-- 🌐 **Works Everywhere**: Functions on all websites in text inputs, textareas, and contenteditable elements
+- **Exact Pattern Matching**: Replace specific text patterns with longer text
+- **Configurable Delay**: Set a delay (default 300ms) before replacement to avoid premature triggers
+- **Persistent Storage**: Shortcuts sync across devices via Chrome sync
+- **Export/Import**: Backup and restore shortcuts as JSON files
+- **Works Everywhere**: Functions on all websites in text inputs, textareas, and contenteditable elements
 
 ## Installation
 

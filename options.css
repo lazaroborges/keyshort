@@ -5,79 +5,91 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background: #f5f5f7;
   min-height: 100vh;
-  padding: 20px;
+  padding: 40px 20px;
+  color: #1d1d1f;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 48px;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e5e7;
 }
 
 h1 {
-  font-size: 2.5em;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2em;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  color: #666;
-  font-size: 1.1em;
+  color: #6e6e73;
+  font-size: 0.95em;
 }
 
 h2 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 1.25em;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h3 {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 15px;
+  font-size: 1em;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .settings-section, .shortcuts-section {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .delay-control {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 8px;
 }
 
 .delay-control label {
-  font-weight: 500;
-  color: #555;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 0.95em;
 }
 
 .delay-control input {
   width: 100px;
   padding: 8px 12px;
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  font-size: 1em;
+  border: 1px solid #d2d2d7;
+  border-radius: 4px;
+  font-size: 0.95em;
+  transition: border-color 0.2s;
+}
+
+.delay-control input:focus {
+  outline: none;
+  border-color: #0071e3;
 }
 
 .help-text {
-  color: #888;
-  font-size: 0.9em;
-  margin-top: 5px;
+  color: #86868b;
+  font-size: 0.85em;
+  margin-top: 6px;
 }
 
 .section-header {
@@ -93,86 +105,92 @@ h3 {
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 8px 16px;
   border: none;
-  border-radius: 6px;
-  font-size: 1em;
+  border-radius: 4px;
+  font-size: 0.9em;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 500;
+  transition: all 0.2s;
+  font-weight: 400;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #0071e3;
   color: white;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  background: #0077ed;
+}
+
+.btn-primary:active {
+  background: #006edb;
 }
 
 .btn-secondary {
-  background: #f0f0f0;
-  color: #333;
+  background: #e8e8ed;
+  color: #1d1d1f;
 }
 
 .btn-secondary:hover {
-  background: #e0e0e0;
+  background: #d2d2d7;
 }
 
 .btn-danger {
-  background: #ff4757;
+  background: #ff3b30;
   color: white;
   padding: 6px 12px;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .btn-danger:hover {
-  background: #ff3838;
+  background: #ff2d20;
 }
 
 .btn-edit {
-  background: #ffa502;
-  color: white;
+  background: #f5f5f7;
+  color: #1d1d1f;
   padding: 6px 12px;
-  font-size: 0.9em;
+  font-size: 0.85em;
+  border: 1px solid #d2d2d7;
 }
 
 .btn-edit:hover {
-  background: #ff9500;
+  background: #e8e8ed;
 }
 
 .add-shortcut {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
+  background: #f5f5f7;
+  padding: 24px;
+  border-radius: 6px;
+  margin-bottom: 32px;
 }
 
 .form-group {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
 }
 
 .input-field {
   flex: 1;
-  padding: 10px 15px;
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  font-size: 1em;
+  padding: 10px 12px;
+  border: 1px solid #d2d2d7;
+  border-radius: 4px;
+  font-size: 0.95em;
+  transition: border-color 0.2s;
 }
 
 .input-field:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #0071e3;
 }
 
 .shortcuts-list {
   background: #fafafa;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e7;
 }
 
 #shortcuts-container {
@@ -183,12 +201,12 @@ h3 {
 
 .shortcut-item {
   background: white;
-  padding: 15px;
-  border-radius: 6px;
+  padding: 16px;
+  border-radius: 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e5e7;
 }
 
 .shortcut-info {
@@ -196,15 +214,17 @@ h3 {
 }
 
 .shortcut-pattern {
-  font-weight: 600;
-  color: #667eea;
-  font-size: 1.1em;
-  margin-bottom: 5px;
+  font-weight: 500;
+  color: #1d1d1f;
+  font-size: 0.95em;
+  margin-bottom: 4px;
+  font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
 }
 
 .shortcut-replacement {
-  color: #666;
-  font-family: monospace;
+  color: #6e6e73;
+  font-size: 0.9em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .shortcut-actions {
@@ -214,15 +234,16 @@ h3 {
 
 .message {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 15px 25px;
-  border-radius: 6px;
-  font-weight: 500;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  top: 24px;
+  right: 24px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 0.9em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   opacity: 0;
-  transform: translateY(-20px);
-  transition: all 0.3s ease;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
   z-index: 1000;
 }
 
@@ -232,22 +253,22 @@ h3 {
 }
 
 .message.success {
-  background: #2ecc71;
+  background: #34c759;
   color: white;
 }
 
 .message.error {
-  background: #ff4757;
+  background: #ff3b30;
   color: white;
 }
 
 .empty-state {
   text-align: center;
-  padding: 40px;
-  color: #999;
+  padding: 48px;
+  color: #86868b;
 }
 
 .empty-state p {
-  font-size: 1.1em;
+  font-size: 0.95em;
 }
 
