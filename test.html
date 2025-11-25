@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Shortcuts Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    
+    .contenteditable {
+      width: 100%;
+      min-height: 100px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      background: white;
+    }
+    
+    .instructions {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .instructions ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    
+    .instructions li {
+      margin: 5px 0;
+    }
+    
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>⌨️ Keyboard Shortcuts Test Page</h1>
+  
+  <div class="instructions">
+    <h3>Testing Instructions:</h3>
+    <ul>
+      <li>Type <code>lazaro-</code> in any field below</li>
+      <li>Wait 300ms (default delay)</li>
+      <li>It should automatically replace to <code>lazaro@parsa-ai.com.br</code></li>
+      <li>Try adding more shortcuts in the extension options page</li>
+    </ul>
+  </div>
+
+  <div class="test-section">
+    <h2>1. Text Input Field</h2>
+    <input type="text" placeholder="Type 'lazaro-' here and wait...">
+  </div>
+
+  <div class="test-section">
+    <h2>2. Textarea</h2>
+    <textarea placeholder="Type 'lazaro-' here and wait..."></textarea>
+  </div>
+
+  <div class="test-section">
+    <h2>3. ContentEditable Div</h2>
+    <div class="contenteditable" contenteditable="true">
+      Type 'lazaro-' here and wait...
+    </div>
+  </div>
+
+  <div class="test-section">
+    <h2>4. Multiple Inputs</h2>
+    <input type="text" placeholder="Email field">
+    <input type="text" placeholder="Another field">
+    <textarea placeholder="Message field"></textarea>
+  </div>
+
+  <div class="test-section">
+    <h2>5. Test Exact Match</h2>
+    <p>The extension should only replace exact matches. Try these:</p>
+    <ul>
+      <li><code>lazaro-</code> ✅ Should replace</li>
+      <li><code>lazaro-test</code> ❌ Should NOT replace (continues typing)</li>
+      <li><code>testlazaro-</code> ❌ Should NOT replace (part of word)</li>
+      <li><code>test lazaro-</code> ✅ Should replace (preceded by space)</li>
+    </ul>
+    <input type="text" placeholder="Test exact matching here">
+  </div>
+
+</body>
+</html>
+
