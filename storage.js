@@ -1,7 +1,7 @@
 // Storage helper functions for Chrome extension
 
 const DEFAULT_SHORTCUTS = {
-  "lazaro-": "lazaro@parsa-ai.com.br"
+  "test-": "Keyshort Test"
 };
 
 const DEFAULT_DELAY = 300;

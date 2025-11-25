@@ -16,9 +16,9 @@
 
 1. Open `test.html` in Chrome (or any website)
 2. Click on any text input field
-3. Type `lazaro-`
+3. Type `test-`
 4. Wait 300ms (about half a second)
-5. **Expected**: Text should automatically change to `lazaro@parsa-ai.com.br`
+5. **Expected**: Text should automatically change to `Keyshort Test`
 
 ✅ **Pass Criteria**: Pattern is replaced correctly
 
@@ -29,9 +29,9 @@
 2. Set delay to 1000ms (1 second)
 3. Click "Save Delay"
 4. Open `test.html`
-5. Type `lazaro-` and immediately continue typing
+5. Type `test-` and immediately continue typing
 6. **Expected**: No replacement should occur if you keep typing
-7. Now type `lazaro-` and wait 1 second
+7. Now type `test-` and wait 1 second
 8. **Expected**: Replacement should occur after 1 second
 
 ✅ **Pass Criteria**: Delay setting works correctly
@@ -41,11 +41,11 @@
 
 1. Open `test.html`
 2. Test these patterns:
-   - Type `lazaro-` → Should replace ✅
-   - Type `lazaro-test` (keep typing) → Should NOT replace ❌
-   - Type `testlazaro-` → Should NOT replace ❌
-   - Type `test lazaro-` → Should replace ✅
-   - Type `test.lazaro-` → Should replace ✅
+   - Type `test-` → Should replace ✅
+   - Type `test-test` (keep typing) → Should NOT replace ❌
+   - Type `testtest-` → Should NOT replace ❌
+   - Type `test test-` → Should replace ✅
+   - Type `test.test-` → Should replace ✅
 
 ✅ **Pass Criteria**: Only exact matches with word boundaries are replaced
 
@@ -57,7 +57,7 @@
    - Text input field
    - Textarea
    - ContentEditable div
-3. Type `lazaro-` in each and verify replacement
+3. Type `test-` in each and verify replacement
 
 ✅ **Pass Criteria**: Works in all three input types
 
@@ -152,9 +152,9 @@ Test on these sites:
 ### Test 12: Cursor Position
 **Objective**: Verify cursor stays in correct position
 
-1. Type: `Hello lazaro- world`
+1. Type: `Hello test- world`
 2. Wait for replacement
-3. **Expected**: `Hello lazaro@parsa-ai.com.br world`
+3. **Expected**: `Hello Keyshort Test world`
 4. **Expected**: Cursor is after the replacement, before " world"
 5. Continue typing
 6. **Expected**: Text inserts at cursor position
@@ -198,7 +198,7 @@ Test on these sites:
 ### Test 16: Rapid Typing
 **Objective**: Verify handling of rapid typing
 
-1. Type very quickly: `lazaro-lazaro-lazaro-`
+1. Type very quickly: `test-test-test-`
 2. **Expected**: Each pattern is replaced correctly
 3. **Expected**: No crashes or errors
 

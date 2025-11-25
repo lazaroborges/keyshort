@@ -12,9 +12,9 @@
 
 1. Open `test.html` (in this folder) in Chrome
 2. Click in any text field
-3. Type: `lazaro-`
+3. Type: `test-`
 4. Wait half a second
-5. Watch it change to: `lazaro@parsa-ai.com.br`
+5. Watch it change to: `Keyshort Test`
 
 ## Add Your Own Shortcuts
 

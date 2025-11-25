@@ -86,27 +86,27 @@
   <div class="instructions">
     <h3>Testing Instructions:</h3>
     <ul>
-      <li>Type <code>lazaro-</code> in any field below</li>
+      <li>Type <code>test-</code> in any field below</li>
       <li>Wait 300ms (default delay)</li>
-      <li>It should automatically replace to <code>lazaro@parsa-ai.com.br</code></li>
+      <li>It should automatically replace to <code>Keyshort Test</code></li>
       <li>Try adding more shortcuts in the extension options page</li>
     </ul>
   </div>
 
   <div class="test-section">
     <h2>1. Text Input Field</h2>
-    <input type="text" placeholder="Type 'lazaro-' here and wait...">
+    <input type="text" placeholder="Type 'test-' here and wait...">
   </div>
 
   <div class="test-section">
     <h2>2. Textarea</h2>
-    <textarea placeholder="Type 'lazaro-' here and wait..."></textarea>
+    <textarea placeholder="Type 'test-' here and wait..."></textarea>
   </div>
 
   <div class="test-section">
     <h2>3. ContentEditable Div</h2>
     <div class="contenteditable" contenteditable="true">
-      Type 'lazaro-' here and wait...
+      Type 'test-' here and wait...
     </div>
   </div>
 
@@ -121,10 +121,10 @@
     <h2>5. Test Exact Match</h2>
     <p>The extension should only replace exact matches. Try these:</p>
     <ul>
-      <li><code>lazaro-</code> ✅ Should replace</li>
-      <li><code>lazaro-test</code> ❌ Should NOT replace (continues typing)</li>
-      <li><code>testlazaro-</code> ❌ Should NOT replace (part of word)</li>
-      <li><code>test lazaro-</code> ✅ Should replace (preceded by space)</li>
+      <li><code>test-</code> ✅ Should replace</li>
+      <li><code>test-test</code> ❌ Should NOT replace (continues typing)</li>
+      <li><code>testtest-</code> ❌ Should NOT replace (part of word)</li>
+      <li><code>test test-</code> ✅ Should replace (preceded by space)</li>
     </ul>
     <input type="text" placeholder="Test exact matching here">
   </div>

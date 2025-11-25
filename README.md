@@ -24,8 +24,8 @@ A Chrome extension that automatically replaces typed patterns with predefined te
 
 1. Click the extension icon or right-click and select "Options"
 2. In the settings page, enter:
-   - **Pattern**: The text to detect (e.g., `lazaro-`)
-   - **Replacement**: The text to replace it with (e.g., `lazaro@parsa-ai.com.br`)
+   - **Pattern**: The text to detect (e.g., `test-`)
+   - **Replacement**: The text to replace it with (e.g., `Keyshort Test`)
 3. Click "Add Shortcut"
 
 ### Using Shortcuts
@@ -33,9 +33,9 @@ A Chrome extension that automatically replaces typed patterns with predefined te
 Simply type your pattern in any text field. After the configured delay (default 300ms), it will automatically be replaced with your predefined text.
 
 **Example:**
-- Type: `lazaro-`
+- Type: `test-`
 - Wait 300ms
-- Result: `lazaro@parsa-ai.com.br`
+- Result: `Keyshort Test`
 
 ### Adjusting Delay
 
@@ -82,7 +82,7 @@ keyshort/
 ## Default Shortcuts
 
 The extension comes with one default shortcut:
-- `lazaro-` → `lazaro@parsa-ai.com.br`
+- `test-` → `Keyshort Test`
 
 You can modify or delete this in the options page.
 
